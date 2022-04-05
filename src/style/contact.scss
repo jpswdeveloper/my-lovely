@@ -1,0 +1,160 @@
+.contact{
+    background-color: transparent;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 0;
+    color: white;
+
+    .left{
+        width: 100%;
+        height: 20%;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+   
+        .info{
+            color: gray;
+            font-size: 20px;
+        }
+        h3{
+            font-size: 30px;
+            font-weight: 400;
+        }
+    }
+    .right{
+        height: 80%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .right-left{
+            flex: 1;
+            height: 100%;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .right-right{
+            flex: 1;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            .form{
+                width: 100%;
+                height: 80%;
+                display: flex;
+                flex-direction: column;
+               margin-top: 10px;
+                input{
+                    width: 70%;
+                    padding: 20px;
+                    margin: 20px;
+                    border-radius: 20px;
+                    background-color: transparent;
+                    border: 5px solid rgba(82, 39, 182, 0.918);
+                    color: white;
+                    font-size: 17px;
+                }
+                input::placeholder{
+                    color: white;
+                }
+                input:focus{
+                    outline: none;
+                }
+                textarea{
+                    width: 70%;
+                    padding: 20px;
+                    height: 300px;
+                    margin: 20px;
+                    border: 5px solid rgba(82, 39, 182, 0.918);
+                    border-radius: 20px;
+                    background-color: transparent;
+                    color: white;
+                    font-size: 17px;
+                    columns: auto;
+                }
+                textarea::placeholder{
+                    color:white
+                }
+                textarea:focus{
+
+                    outline: none;
+                }
+            }
+            .send{
+                width: 30%;
+                padding: 15px;
+                border-radius: 10px;
+                background-color: teal;
+                color: white;
+                border: none;
+                cursor: pointer;
+                transition: all .5s ease;
+                margin-left: 20px;
+                &:hover{
+                    background-color: transparent;
+                
+                }
+            }
+            .send:focus{
+                outline: none;
+            }
+        }
+        
+    }
+
+}
+@media screen and (max-width:600px) {
+    .contact{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        .left{
+            display: flex;
+            height: auto;
+        }
+        .right{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .right-left{
+                height: auto;
+                width: 100%;
+            }
+            .right-right{
+                width: 100%;
+                display: flex;
+                .form{
+                    width: 100%;
+                    input{
+                        width: 90%;
+                    }
+                    textarea{
+                        width: 90%;
+                    }
+                }
+                .send{
+                    width: 50%;
+                    margin-bottom: 10px;
+                    font-size: 20px;
+                }
+            }
+        }
+
+
+    }
+}

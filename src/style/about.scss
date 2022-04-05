@@ -1,0 +1,211 @@
+.containerAbout{
+    background-color: transparent;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 0;
+    color: white;
+    .firstAbout{
+        width: 100%;
+        height: 20%;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .info{
+            color: gray;
+            font-size: 20px;
+        }
+        h3{
+            font-size: 30px;
+            font-weight: 400;
+        }
+    }
+    .secondAbout{
+        display: flex;
+        width: 100%;
+        height: 80%;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        .imageHolder{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            color: #000;
+            align-items: center;
+            position: relative;
+            justify-content: center;
+           .imgages{
+            width: 60%;
+            height: 80%;
+            overflow: hidden;
+            background-color: #214161;
+            position: relative;
+            border-radius: 40px;
+           } 
+            .imageHolder2{
+                position: absolute;
+                top: 49px;
+                left:130px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 60%;
+                height: 80%;
+                overflow: hidden;
+                transform: rotate(10deg);
+                border-radius: 40px;
+                transition: all 1s ease;
+                background-color: #2f72bb62 ;
+                img{
+                    object-fit: cover;
+                    width: 90%;
+                    height: 90%;
+                }
+                &:hover{
+                    transform: rotate(0deg);
+                }
+            }
+
+
+        }
+        .infoHolder{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            justify-content: space-evenly;
+            .infos{
+                width: 100%;
+                display: flex;
+            }
+            .desc{
+                letter-spacing: .004rem;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .buttons{
+                .talk{
+                    padding: 20px;
+                    width: 150px;
+                    background-color: teal;
+                    color: white;
+                    border: 2px solid white;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    transition: all 1s ease;
+                &:hover{
+                    border: none;
+                    background-color: transparent;
+                }
+                }
+
+            }
+        }
+    }
+}
+@media screen and (max-width:600px) {
+    .containerAbout{
+       width: 100%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        .firstAbout{
+            height: auto;
+            display: flex;
+        }
+        .secondAbout{
+            width: 100vw;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            .imageHolder{
+                width: 100%;
+                height: 350px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                .imgages{
+                    width: 60%;
+                    height: 80%;
+                    overflow: hidden;
+                    background-color: #214161;
+                    position: relative;
+                    border-radius: 40px;
+                }
+                .imageHolder2{
+                    position: absolute;
+                    top: 38px;
+                    left:80px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 60%;
+                    height: 80%;
+                    overflow: hidden;
+                    transform: rotate(10deg);
+                    border-radius: 40px;
+                    transition: all 1s ease;
+                    background-color: #2f72bb62 ;
+                    img{
+                        object-fit: cover;
+                        width: 90%;
+                        height: 90%;
+                    }
+                    &:hover{
+                        transform: rotate(0deg);
+                    }
+                }
+
+            }
+            .infoHolder{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                justify-content: space-evenly;
+                .infos{
+                    width: 100%;
+                    display: flex;
+                }
+                .desc{
+                    letter-spacing: .004rem;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+                .buttons{
+                    .talk{
+                        padding: 20px;
+                        width: 150px;
+                        background-color: teal;
+                        color: white;
+                        border: 2px solid white;
+                        border-radius: 10px;
+                        cursor: pointer;
+                        transition: all 1s ease;
+                    &:hover{
+                        border: none;
+                        background-color: transparent;
+                    }
+                    .talk:focus{
+                        outline: none;
+                    }
+                    }
+    
+                }
+            }
+        }
+    }
+}

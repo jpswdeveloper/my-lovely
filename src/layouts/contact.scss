@@ -1,0 +1,30 @@
+.lets-talk{
+    width: 300px;
+    height: 150px;
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2f73bb1c;
+    border-radius: 20px;
+    justify-content: space-evenly;
+    .letIcon{
+        font-size: 30px;
+    }
+   .email{
+       color: lightcyan;
+   }
+   .header {
+    color: #ffffff; 
+   }
+   .text{
+       color: gray;
+       cursor: pointer;
+       transition: all .5s ease-in;
+   &:hover{
+       color: lightcyan;
+   }
+    }
+   
+}
