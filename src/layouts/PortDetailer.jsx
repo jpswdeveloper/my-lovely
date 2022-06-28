@@ -3,7 +3,7 @@ import './detailerPort.scss'
 const PortDetailer = ({ image, detail, githubLink, live }) => {
 
     return (
-        <div className='portImage'>
+        // <div className='portImage'>
             <div className="imagePort">
                 <img src={image} alt="" />
             </div>
